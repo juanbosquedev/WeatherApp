@@ -1,0 +1,68 @@
+.body {
+  display: grid;
+  background-image: url("https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2VhdGhlciUyMGFwcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* overflow-y: hidden; */
+}
+.subBody {
+  display: grid;
+  height: fit-content;
+  padding-top: 8%;
+  justify-items: center;
+  color: blanchedalmond;
+}
+.subBody h4 {
+  padding-top: 3rem;
+}
+.Links {
+  height: 3rem;
+  width: 15rem;
+  justify-content: center;
+  margin-top: 4rem;
+  background-color: grey;
+  border-radius: 40px;
+  border: green solid;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: green;
+}
+
+@media screen and (max-width: 550px) {
+    .body{
+        
+        align-items: center;
+   
+    }
+  .subBody {
+      display: grid;
+      height: 50%;
+   padding-top: 0px;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .subBody h4 {
+   
+    padding: 3px;
+    padding-right: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .Links{
+    height: 2rem;
+    width: 10rem;
+    justify-content: center;
+    margin-top: 2.5rem;
+    background-color: grey;
+    border-radius: 40px;
+    border: green solid;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: green;
+  }
+}

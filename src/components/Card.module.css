@@ -1,0 +1,44 @@
+.body {
+  background-color: rgb(79, 166, 216);
+  height: 9rem;
+  width: 17rem;
+  font-size: 2rem;
+  border-radius: 20px;
+  padding:0.5rem;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.mid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-items: center;
+  align-items: center;
+}
+.link {
+  display: flex;
+font-size: 4rem;
+  color: greenyellow;
+  align-items: center;
+  
+}
+.close {
+  display: grid;
+  margin-left: 85%;
+  align-items: center;
+  border-radius: 100px;
+  border: solid black;
+  color: red;
+  background-color: rgb(85, 85, 85);
+  width: 2rem;
+  height: 2rem;
+}
+.mid img {
+  height: 75px;
+}
+.mid tag {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 550px) {
+ .body{ margin-bottom: 1rem;}
+}
