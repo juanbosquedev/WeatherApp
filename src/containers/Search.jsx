@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import Style from "./Search.module.css";
 
 export default function Search({ setState }) {
-  console.log(typeof setState, " setState en search");
   let refs = useRef();
   const [inputs, setInputs] = useState("");
   let handleChange = () => {
