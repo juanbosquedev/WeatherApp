@@ -4,7 +4,7 @@
   width: 17rem;
   font-size: 2rem;
   border-radius: 20px;
-  padding:0.5rem;
+  padding: 0.5rem;
   gap: 1rem;
   margin-right: 1rem;
 }
@@ -17,10 +17,9 @@
 }
 .link {
   display: flex;
-font-size: 4rem;
+  font-size: 4rem;
   color: greenyellow;
   align-items: center;
-  
 }
 .close {
   display: grid;
@@ -40,5 +39,7 @@ font-size: 4rem;
   font-size: 2.5rem;
 }
 @media screen and (max-width: 550px) {
- .body{ margin-bottom: 1rem;}
+  .body {
+    margin-bottom: 1rem;
+  }
 }

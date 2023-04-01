@@ -1,17 +1,16 @@
-import { Route, Switch, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Route, Switch } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Home from "../containers/Home";
 import About from "./About";
 import Landing from "./Landing";
 import Nav from "./Nav";
 import Details from "./Details";
-import { useEffect, useState } from "react";
 import WeatherApp from "./WeatherApp";
 
 function App() {
   const [state, setState] = useState(null);
   const [city, setCity] = useState([]);
-  const [details, setDetails] = useState();
   if (city.length === 4) {
     let citi = city.slice(1, 4);
     setCity(citi);
@@ -21,26 +20,26 @@ function App() {
     return setCity(city.filter((city) => city.id !== id));
   }
 
-  function searching() {
-    let apiKey = process.env.REACT_APP_API_KEY;
-    fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`
-    )
-      .then((r) => r.json())
-      .then((recurso) => {
-        if (recurso.name) return setCity([...city, recurso]);
-        else {
-          alert("city not found");
-        }
-      })
-      .catch((msg) => setState(msg.message));
-  }
+
   function filtering(id) {
-    setDetails(city.find((city) => city.id == id.slice(1)));
-    return details;
+    return city.find((city) => city.id === parseInt(id.slice(1)));
   }
   useEffect(() => {
-    if (state !== null) searching();
+    function searching() {
+      let apiKey = process.env.REACT_APP_API_KEY;
+      fetch(
+        `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`
+      )
+        .then((r) => r.json())
+        .then((recurso) => {
+          if (recurso.name) return setCity([...city, recurso]);
+          else {
+            alert("city not found");
+          }
+        })
+        .catch((msg) => setState(msg.message));
+    }
+    if (state !== null) searching(state);
   }, [state]);
 
   return (
@@ -48,7 +47,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Landing}></Route>
-          <section>
+          <>
             <Nav setState={setState} />
             <Route
               exact
@@ -64,7 +63,7 @@ function App() {
                 <Details city={filtering(match.params.id)} />
               )}
             ></Route>
-          </section>
+          </>
         </Switch>
       </Router>
     </>

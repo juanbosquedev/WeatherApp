@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Style from './Search.module.css'
+import Style from "./Search.module.css";
 
 export default function Search({ setState }) {
   console.log(typeof setState, " setState en search");
@@ -14,7 +14,7 @@ export default function Search({ setState }) {
     setInputs("");
   };
   return (
-    <div >
+    <div>
       <form className={Style.body} type="submit" onSubmit={handleSubmit}>
         <input
           className={Style.input}

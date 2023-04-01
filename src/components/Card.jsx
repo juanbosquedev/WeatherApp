@@ -11,18 +11,26 @@ export default function Card({
 }) {
   return (
     <div className={Style.body}>
-      <button className={Style.close} onClick={() => deleting(id)}>x</button>
-      
-      <tag>{name}, {country}</tag>
+      <button className={Style.close} onClick={() => deleting(id)}>
+        x
+      </button>
+
+      <tag>
+        {name}, {country}
+      </tag>
       <div className={Style.mid}>
-      <img
-        src={`http://openweathermap.org/img/w/${icon}.png`}
-        alt="icon weather"
-      />
+        <img
+          src={`http://openweathermap.org/img/w/${icon}.png`}
+          alt="icon weather"
+        />
         <tag>{temperature} °</tag>
-        <Link className={Style.link} Style='text-decoration:none' to={`/details/:${id}`}>
-         +
-          </Link>
+        <Link
+          className={Style.link}
+          Style="text-decoration:none"
+          to={`/details/:${id}`}
+        >
+          +
+        </Link>
       </div>
     </div>
   );

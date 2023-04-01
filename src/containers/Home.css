@@ -1,14 +1,11 @@
-.Home {  
+.Home {
   background-color: #062c79;
   overflow-x: scroll;
   overflow-y: scroll;
-
 }
 
 .Home-logo {
   height: 40vmin;
-
-  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,15 +17,13 @@
 .Home-header {
   background-color: #062c79;
   min-height: 100vh;
-   display: flex; 
+  display: flex;
   /* flex-direction: column;  */
   align-items: center;
   justify-content: center;
   font-size: calc(100px + 2vmin);
   color: white;
 }
-
-
 
 @keyframes Home-logo-spin {
   from {
@@ -37,14 +32,12 @@
   to {
     transform: rotate(360deg);
   }
-  
 }
 @media screen and (max-width: 550px) {
-  .Home-header {  
+  .Home-header {
     display: flex;
     flex-direction: column;
     overflow-x: scroll;
     overflow-y: scroll;
-  
   }
 }

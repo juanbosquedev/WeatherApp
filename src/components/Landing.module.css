@@ -31,28 +31,25 @@
 }
 
 @media screen and (max-width: 550px) {
-    .body{
-        
-        align-items: center;
-   
-    }
+  .body {
+    align-items: center;
+  }
   .subBody {
-      display: grid;
-      height: 50%;
-   padding-top: 0px;
+    display: grid;
+    height: 50%;
+    padding-top: 0px;
     justify-content: center;
     text-align: center;
     font-size: 12px;
     flex-wrap: wrap;
   }
   .subBody h4 {
-   
     padding: 3px;
     padding-right: 3px;
     margin-left: 3px;
     margin-right: 3px;
   }
-  .Links{
+  .Links {
     height: 2rem;
     width: 10rem;
     justify-content: center;

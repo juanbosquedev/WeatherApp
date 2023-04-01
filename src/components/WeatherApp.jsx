@@ -1,4 +1,5 @@
 import Style from "./WeatherApp.module.css";
+
 export default function WeatherApp() {
   return (
     <div className={Style.body}>

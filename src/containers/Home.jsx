@@ -1,5 +1,4 @@
 import Card from "../components/Card.jsx";
-
 import "./Home.css";
 
 function Home({ city, deleting }) {

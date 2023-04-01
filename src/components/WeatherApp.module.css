@@ -1,10 +1,10 @@
-.body{
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    text-align: center;
-    color:greenyellow;
-    padding-left:3rem;
-    padding-right: 3rem;
+.body {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  color: greenyellow;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }

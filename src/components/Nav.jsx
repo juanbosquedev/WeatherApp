@@ -14,7 +14,7 @@ export default function Nav({ setState }) {
         HOME
       </NavLink>
       <NavLink
-      className={Style.NavLink}
+        className={Style.NavLink}
         activeStyle={{
           color: "white",
         }}
@@ -24,7 +24,7 @@ export default function Nav({ setState }) {
       </NavLink>
 
       <NavLink
-      className={Style.NavLink}
+        className={Style.NavLink}
         to="/Weather-App"
         id={Style.Weather}
         activeStyle={{
