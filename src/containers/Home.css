@@ -15,7 +15,7 @@
 }
 
 .Home-header {
-  background-color: #062c79;
+  background-color: blue;
   min-height: 100vh;
   display: flex;
   /* flex-direction: column;  */
