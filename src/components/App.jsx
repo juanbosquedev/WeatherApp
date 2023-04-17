@@ -24,23 +24,23 @@ function App() {
   function filtering(id) {
     return city.find((city) => city.id === parseInt(id.slice(1)));
   }
-//   useEffect(() => {
-//     function searching() {
-//       let apiKey = process.env.REACT_APP_API_KEY;
-//       fetch(
-//         `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`
-//       )
-//         .then((r) => r.json())
-//         .then((recurso) => {
-//           if (recurso.name) return setCity([...city, recurso]);
-//           else {
-//             alert("city not found");
-//           }
-//         })
-//         .catch((msg) => setState(msg.message));
-//     }
-//     if (state !== null) searching(state);
-//   }, [state]);
+  useEffect(() => {
+    function searching() {
+      let apiKey = process.env.REACT_APP_API_KEY;
+      fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`
+      )
+        .then((r) => r.json())
+        .then((recurso) => {
+          if (recurso.name) return setCity([...city, recurso]);
+          else {
+            alert("city not found");
+          }
+        })
+        .catch((msg) => setState(msg.message));
+    }
+    if (state !== null) searching(state);
+  }, [state]);
 
   return (
     <>
