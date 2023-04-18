@@ -20,7 +20,7 @@ export default function Card({
       </tag>
       <div className={Style.mid}>
         <img
-          src={`http://openweathermap.org/img/w/${icon}.png`}
+          src={`https://openweathermap.org/img/w/${icon}.png`}
           alt="icon weather"
         />
         <tag>{temperature} °</tag>
