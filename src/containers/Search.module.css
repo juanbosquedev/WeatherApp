@@ -3,9 +3,14 @@
 
   align-items: center;
 }
-.input {
+.inputs {
   border-radius: 20px 0px 0px 20px;
   height: 1.3rem;
+}
+.inputs:hover::after{
+  content: "write here";
+  background-color: black;
+  color: #fff;
 }
 .button {
   height: 1.6rem;

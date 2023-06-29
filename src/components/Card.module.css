@@ -8,6 +8,11 @@
   gap: 1rem;
   margin-right: 1rem;
 }
+.body:hover::after{
+  content: "click + for detials!";
+  color: #fff;
+
+}
 .mid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

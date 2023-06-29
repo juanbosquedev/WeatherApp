@@ -16,7 +16,7 @@ export default function Search({ setState }) {
     <div>
       <form className={Style.body} type="submit" onSubmit={handleSubmit}>
         <input
-          className={Style.input}
+          className={Style.inputs}
           type="text"
           ref={refs}
           value={inputs}
