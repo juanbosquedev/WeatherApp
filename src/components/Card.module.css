@@ -10,7 +10,7 @@
   transition: all 4s ease;
   position: relative;
 }
-
+/* 
 .body:hover {
   transform: rotate(45deg);
   transition: transform 1s ease;
@@ -23,7 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0.5rem;
-}
+} */
 
 .mid {
   display: grid;
