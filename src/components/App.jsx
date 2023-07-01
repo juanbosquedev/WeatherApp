@@ -7,6 +7,8 @@ import Landing from "./Landing";
 import Nav from "./Nav";
 import Details from "./Details";
 import WeatherApp from "./WeatherApp";
+import Style from "./About.module.css"
+
 
 function App() {
   const [state, setState] = useState(null);
@@ -46,6 +48,7 @@ function App() {
     <>
       <Router>
         <Switch>
+          <div className={Style.conteiner}>
           <Route exact path="/" component={Landing}></Route>
           <>
             <Nav setState={setState} />
@@ -64,6 +67,7 @@ function App() {
               )}
             ></Route>
           </>
+          </div>
         </Switch>
       </Router>
     </>
