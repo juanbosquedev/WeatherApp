@@ -5,12 +5,10 @@ export default function Landing() {
   return (
     <div className={Style.body}>
       <div className={Style.subBody}>
-        <h1>Welcome to Weather App!</h1>
-        <h4>
-          An amazing place where find out the forescat about your favorite place
-        </h4>
+        <h1>Weather App!</h1>
+     
         <Link className={Style.Links} to="/home">
-          CLICK ME
+          CLICK
         </Link>
       </div>
     </div>
