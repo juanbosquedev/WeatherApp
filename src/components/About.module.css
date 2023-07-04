@@ -8,3 +8,10 @@
     padding-left:3rem;
     padding-right: 3rem;
 }
+
+p{
+    font-weight: 600;
+    line-height: 2rem;
+    width:70vw;
+    margin: 3rem auto;
+}

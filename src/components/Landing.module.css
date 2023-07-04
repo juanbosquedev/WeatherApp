@@ -1,31 +1,32 @@
 .body {
+  display: grid;
   background-image: url('../../public/background-image.jpg');
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .subBody {
-
+  display: grid;
+  height: fit-content;
   padding-top: 8%;
   justify-items: center;
   color: blanchedalmond;
 }
-
+.subBody h4 {
+  padding-top: 3rem;
+}
 .Links {
-  height: 2.5rem;
-  width: 10rem;
-  /* justify-items: center; */
-  background-color: rgb(3, 26, 77);
+  height: 3rem;
+  width: 15rem;
+  justify-content: center;
+  margin-top: 4rem;
+  background-color: grey;
   border-radius: 40px;
-  border: rgb(118, 255, 118) solid;
-  text-align:center;
-  padding:.5rem;
-
-  
+  border: green solid;
+  text-align: center;
   text-decoration: none;
   font-size: 2rem;
-  color: rgb(32, 233, 32);
+  color: green;
 }
 
 @media screen and (max-width: 550px) {
