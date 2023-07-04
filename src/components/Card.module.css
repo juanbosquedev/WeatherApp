@@ -34,9 +34,12 @@
 }
 .link {
   display: flex;
-  font-size: 4rem;
-  color: greenyellow;
+  font-size: 2.5rem;
+  color: rgb(177, 206, 133);
   align-items: center;
+}
+.link:hover{
+  color:rgb(154, 255, 2)
 }
 .close {
   display: grid;
@@ -52,8 +55,10 @@
 .mid img {
   height: 75px;
 }
-.mid tag {
-  font-size: 2.5rem;
+.body>tag {
+  margin: 0  2rem;
+  justify-items: center;
+
 }
 @media screen and (max-width: 550px) {
   .body {

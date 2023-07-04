@@ -29,7 +29,7 @@ export default function Card({
           Style="text-decoration:none"
           to={`/details/:${id}`}
         >
-          +
+          Info
         </Link>
       </div>
     </div>
