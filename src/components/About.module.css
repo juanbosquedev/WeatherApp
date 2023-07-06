@@ -22,6 +22,8 @@ p{
     }
     p{
         padding-bottom: 2rem;
+        width: 85vw;
+        margin: 1rem auto;
     }
 
 }
