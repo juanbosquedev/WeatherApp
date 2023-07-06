@@ -50,8 +50,7 @@ size: 2rem;
 @media screen and (max-width: 550px) {
   .body {
     margin-bottom: 1rem;
+    flex-grow: 0;
   }
-  .card{
-    flex-grow:0;
-  }
+
 }
