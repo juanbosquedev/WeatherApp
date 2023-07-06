@@ -17,7 +17,11 @@ p{
 }
 @media screen and (max-width: 600px) {
     .body{
-        overflow: scroll;
+        overflow-y: scroll;
+       
+    }
+    p{
         padding-bottom: 2rem;
     }
+
 }
