@@ -15,3 +15,8 @@ p{
     width:70vw;
     margin: 3rem auto;
 }
+@media screen and (max-width: 600px) {
+    .body{
+        overflow: scroll;
+    }
+}
