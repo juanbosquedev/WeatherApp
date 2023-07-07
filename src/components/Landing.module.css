@@ -1,9 +1,11 @@
 .body {
-  display: grid;
+  display: block;
   background-image: url('../../public/wp10154426.jpg');
   height: 100vh;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: top;
+background-repeat: no-repeat;
+  
 }
 .subBody {
   display: grid;
