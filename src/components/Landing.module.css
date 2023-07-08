@@ -1,23 +1,33 @@
 .body {
   display: grid;
-  background-image: url('../../public/wp10154426.jpg');
+  background-image: url("../../public/wp10154426.jpg");
   height: 100vh;
   background-size: cover;
-background-repeat: no-repeat;
-align-content: center;
+  background-repeat: no-repeat;
+  align-content: center;
+
 }
 .subBody {
   display: grid;
- 
   justify-items: center;
   color: blanchedalmond;
-gap:7rem;
-}
+  gap: 7rem;
 
+}
+.subBody h1{
+  font-size: 2rem;
+  color:aliceblue;
+  transition-property: color;
+  transition:  1s ease ;
+}
+.subBody h1:hover{
+ color:black;
+ font-size: 3rem;
+}
 .Links {
+  margin:2rem;
   height: 3rem;
   width: 15rem;
-  justify-content: center;
   margin-top: 4rem;
   background-color: grey;
   border-radius: 40px;
@@ -26,11 +36,12 @@ gap:7rem;
   text-decoration: none;
   font-size: 2rem;
   color: green;
-  transition: color, border 1s;
+  transition-property: color, border;
+  transition: 1s ease ;
 }
-.Links:hover{
-  border-color: rgb(65, 248, 65);
-  color:rgb(65, 248, 65);
+.Links:hover {
+  border: rgb(65, 248, 65) solid;
+  color: rgb(65, 248, 65);
 }
 
 @media screen and (max-width: 550px) {
