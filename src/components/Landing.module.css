@@ -1,22 +1,19 @@
 .body {
-  display: block;
+  display: grid;
   background-image: url('../../public/wp10154426.jpg');
   height: 100vh;
   background-size: cover;
-  background-position-y: top;
 background-repeat: no-repeat;
-  
+align-content: center;
 }
 .subBody {
   display: grid;
-  height: fit-content;
-  padding-top: 8%;
+ 
   justify-items: center;
   color: blanchedalmond;
+gap:7rem;
 }
-.subBody h4 {
-  padding-top: 3rem;
-}
+
 .Links {
   height: 3rem;
   width: 15rem;
@@ -32,8 +29,8 @@ background-repeat: no-repeat;
   transition: color, border 1s;
 }
 .Links:hover{
-  color:rgb(65, 248, 65);
   border-color: rgb(65, 248, 65);
+  color:rgb(65, 248, 65);
 }
 
 @media screen and (max-width: 550px) {

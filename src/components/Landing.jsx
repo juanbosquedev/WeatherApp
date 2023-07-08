@@ -5,7 +5,7 @@ export default function Landing() {
   return (
     <div className={Style.body}>
       <div className={Style.subBody}>
-        <h1>Weather App!</h1>
+        <h1>WEATHER APP!</h1>
      
         <Link className={Style.Links} to="/home">
           CLICK
