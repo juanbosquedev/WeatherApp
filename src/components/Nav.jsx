@@ -4,6 +4,7 @@ import Style from "./Nav.module.css";
 export default function Nav({ setState }) {
   return (
     <div className={Style.body}>
+      
       <NavLink
         className={Style.NavLink}
         activeStyle={{
@@ -34,6 +35,7 @@ export default function Nav({ setState }) {
         WEATHER-APP
       </NavLink>
       <Search
+        className={Style.search}
         activeStyle={{
           color: "white",
         }}
