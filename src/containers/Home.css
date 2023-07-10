@@ -10,14 +10,14 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .Home-logo {
-    animation: Home-logo-spin infinite 30s linear;
+    animation: Home-logo-spin infinite 10s ease;
   }
 }
 
 .Home-header {
   background-image: url("../../public/wp10154404.jpg");
   height: 100vh;
-  background-size: cover;
+  background-size: 100%;
   background-position-y: top;
   background-repeat: no-repeat;
 
@@ -31,11 +31,16 @@
 }
 
 @keyframes Home-logo-spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    transform:rotate3d(0,1,0,0deg);
   }
-  to {
-    transform: rotate(360deg);
+  /* 50%{
+    transform:rotate3d(360deg);
+  } */
+  100% {
+    /* transform: rotate(360deg); */
+    transform:rotate3d(0,1,0,360deg);
+
   }
 }
 @media screen and (max-width: 550px) {
