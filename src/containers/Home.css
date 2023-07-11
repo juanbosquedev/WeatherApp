@@ -17,7 +17,7 @@
 .Home-header {
   background-image: url("../../public/wp10154404.jpg");
   height: 100vh;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position-y: top;
   background-repeat: no-repeat;
 
