@@ -3,7 +3,7 @@ import Search from "../containers/Search";
 import Style from "./Nav.module.css";
 export default function Nav({ setState }) {
   return (
-    <div className={Style.body}>
+    <div className={Style.Navbody}>
       
       <NavLink
         className={Style.NavLink}

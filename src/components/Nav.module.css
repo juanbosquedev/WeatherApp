@@ -1,4 +1,4 @@
-.body {
+.Navbody {
   background-color: rgb(85, 85, 85);
   display: flex;
   height: 3rem;
@@ -12,8 +12,13 @@
   text-decoration: none;
 }
 @media screen and (max-width: 550px) {
-  .body{
+  .Navbody{
+    display: flex;
+    padding-left: .5rem;
     padding-right: 0;
+    gap:1rem;
+   /* justify-content: space-evenly; */
+/* justify-items: flex-end; */
   }
   #Weather {
     display: none;
