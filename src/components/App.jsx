@@ -48,7 +48,7 @@ function App() {
     <>
       <Router>
         <Switch>
-          <div className={Style.conteiner}>
+          <div className={Style.conteinerApp}>
           <Route exact path="/" component={Landing}></Route>
           <>
             <Nav setState={setState} />
