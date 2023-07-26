@@ -39,12 +39,12 @@
   color: green;
   transition-property: color border;
   filter:0;
-  transition: all 1s ease ;
+  transition: 1s ease ;
 }
 .Links:hover {
   border: rgb(65, 248, 65) solid;
   color: rgb(65, 248, 65);
-  filter: drop-shadow( 0 0 3rem rgb(65, 248, 65));
+  filter: drop-shadow( 0 0 3rem rgb(164, 179, 226));
 
 }
 
