@@ -38,13 +38,14 @@
   font-size: 2rem;
   color: green;
   transition-property: color border;
-  transition: 1.5s ease ;
-  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  filter:0;
+  transition: all 1s ease ;
 }
 .Links:hover {
   border: rgb(65, 248, 65) solid;
   color: rgb(65, 248, 65);
- 
+  filter: drop-shadow( 0 0 3rem rgb(65, 248, 65));
+
 }
 
 @media screen and (max-width: 550px) {

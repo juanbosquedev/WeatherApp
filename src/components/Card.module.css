@@ -11,11 +11,12 @@
   flex-grow: 1;
   max-width: 20rem;
   max-height: 10rem;
-  box-shadow: 0;
-  transition: box-shadow 1s;
+  filter: 0;
+  transition: filter 1s;
 }
 .body:hover {
-  box-shadow: 0 0 3rem rgb(232, 232, 235);
+  /* box-shadow: 0 0 3rem rgb(232, 232, 235); */
+  filter: drop-shadow( 0 0 3rem rgb(232, 232, 235));
 }
 .mid {
   display: grid;
